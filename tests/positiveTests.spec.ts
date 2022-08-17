@@ -1,35 +1,35 @@
 import { expect } from 'chai';
 import { Registration } from '../registrationClass/registationPage';
 import { afterEach, beforeEach } from 'mocha';
-import { Values_Positive } from '../Helpers/valuesForCheck';
-import { V_Positive } from '../Helpers/valuesForForm';
+import { VALUES_POSITIVE } from '../Helpers/valuesForCheck';
+import { V_POSITIVE } from '../Helpers/valuesForForm';
 
 describe('Positive test', () => {
     it('Check login', () => {
-        expect(Registration.loginField(V_Positive.login)).to.equal(Values_Positive.loginFirst);
+        expect(Registration.loginField(V_POSITIVE.LOGIN_FIRST)).to.equal(VALUES_POSITIVE.LOGIN_FIRST);
     });
 
     it('Check login2', () => {
-        expect(Registration.loginField(V_Positive.login2)).to.equal(Values_Positive.login_2);
+        expect(Registration.loginField(V_POSITIVE.LOGIN_SECOND)).to.equal(VALUES_POSITIVE.LOGIN_SECOND);
     });
 
     it('Check login3', () => {
-        expect(Registration.loginField(V_Positive.login3)).to.equal(Values_Positive.login_3);
+        expect(Registration.loginField(V_POSITIVE.LOGIN_THIRD)).to.equal(VALUES_POSITIVE.LOGIN_THIRD);
     });
 
     it('Check password', () => {
-        expect(Registration.passwordField(V_Positive.password)).to.equal(Values_Positive.passwordFirst);
+        expect(Registration.passwordField(V_POSITIVE.PASSWORD_FIRST)).to.equal(VALUES_POSITIVE.PASSWORD_FIRST);
     });
 
     it('Check password2', () => {
-        expect(Registration.passwordField(V_Positive.password2)).to.equal(Values_Positive.password_2);
+        expect(Registration.passwordField(V_POSITIVE.PASSWORD_SECOND)).to.equal(VALUES_POSITIVE.PASSWORD_SECOND);
     });
 
     it('Check email', () => {
-        expect(Registration.mailField(V_Positive.email)).to.equal(Values_Positive.emailFirst);
+        expect(Registration.mailField(V_POSITIVE.EMAIL_FIRST)).to.equal(VALUES_POSITIVE.EMAIL_FIRST);
     });
 
     it('Check email2', () => {
-        expect(Registration.mailField(V_Positive.email2)).to.equal(Values_Positive.email_2);
+        expect(Registration.mailField(V_POSITIVE.EMAIL_SECOND)).to.equal(VALUES_POSITIVE.EMAIL_SECOND);
     });
 });
